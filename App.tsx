@@ -13,10 +13,14 @@ export default function App() {
   const [resultValue, setResultValue] = useState('')
   const [targetCurrency, setTargetCurrency] = useState('')
   
+  /**
+   * Handles button press event and converts input value to target currency.
+   * @param targetValue - The target currency object containing value and symbol.
+   */
   const buttonPressed = (targetValue: Currency) => {
     console.log("Clicked",targetValue)
     if (!inputValue) {
-     console.log("Enter a value to convert",)
+      console.log("Enter a value to convert",)
     }
 
     const inputAmount = parseFloat(inputValue)
@@ -26,9 +30,7 @@ export default function App() {
       setResultValue(result)
       setTargetCurrency(targetValue.name)
     } else {
-      
-        console.log("Enter a valid value",)
-      
+      console.log("Enter a valid value",)
     }
   }
   return (

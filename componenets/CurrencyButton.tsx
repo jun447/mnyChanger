@@ -7,6 +7,11 @@ type CurrencyButtonProps = PropsWithChildren<{
     flag: string;
 }> 
 
+/**
+ * Renders a button with country name and flag.
+ * @param {CurrencyButtonProps} props - The props object containing name and flag.
+ * @returns {JSX.Element} - A JSX Element representing the CurrencyButton component.
+ */
 const CurrencyButton = (props: CurrencyButtonProps) : JSX.Element => {
     return (
         <View style={styles.buttonContainer} > 

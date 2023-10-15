@@ -1,3 +1,16 @@
+/**
+ * An array of objects representing different currencies and their values in rupees.
+ * @typedef {Object} Currency
+ * @property {string} name - The name of the currency.
+ * @property {number} value - The value of the currency in rupees.
+ * @property {string} flag - The flag of the country associated with the currency.
+ * @property {string} symbol - The symbol of the currency.
+ */
+
+/**
+ * An array of objects representing different currencies and their values in rupees.
+ * @type {Currency[]}
+ */
 export const currencyByRupee: Currency[] = [
     {
       name: 'DOLLAR',
