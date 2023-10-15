@@ -16,16 +16,7 @@ export default function App() {
   const buttonPressed = (targetValue: Currency) => {
     console.log("Clicked",targetValue)
     if (!inputValue) {
-      return(
-        <Snackbar
-        visible={true}
-        duration={5000}
-        onDismiss={() => {}}
-      >
-        "Enter a value to convert",
-      </Snackbar>
-      )
-      
+     console.log("Enter a value to convert",)
     }
 
     const inputAmount = parseFloat(inputValue)
@@ -35,15 +26,9 @@ export default function App() {
       setResultValue(result)
       setTargetCurrency(targetValue.name)
     } else {
-       return(
-        <Snackbar
-        visible={true}
-        duration={5000}
-        onDismiss={() => {}}
-      >
-        "Enter valid number",
-      </Snackbar>
-       )
+      
+        console.log("Enter a valid value",)
+      
     }
   }
   return (
